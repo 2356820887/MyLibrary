@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:inputType="textPersonName"
+        android:text="dsh001"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="123456"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPwd" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+    <Button
+        android:id="@+id/btnLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数字图书馆"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMsg" />
+    <Button
+        android:id="@+id/btnGarbage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="垃圾分类"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLibrary" />
+
+    <Button
+        android:id="@+id/btnPosthouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="青年驿站"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGarbage" />
+
+    <Button
+        android:id="@+id/btnDonation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="爱心捐赠"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPosthouse" />
+
+    <Button
+        android:id="@+id/btnHotline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="政府热线"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDonation" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="（暂定）"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnHotline" />
+</androidx.constraintlayout.widget.ConstraintLayout>
